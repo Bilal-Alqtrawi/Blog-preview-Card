@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap');
+:root {
+    --main-bg-color: hsl(47, 88%, 63%);
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    box-sizing: border-box;
+    background-color: var(--main-bg-color);
+    margin: 0;
+    padding: 0;
+    font-family: 'Figtree', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+@media (min-width:576px) {
+    .container {
+        width: 540px;
+    }
+}
+@media (min-width:768px) {
+    .container {
+        width: 720px;
+    }
+}
+@media (min-width:992px) {
+    .container {
+        width: 960px;
+    }
+}
+@media (min-width:1200px) {
+    .container {
+        width: 1140px;
+    }
+}
+@media (min-width:1400px) {
+    .container {
+        width: 1320px;
+    }
+}
+/* Start Blog */
+.container {
+    height: 100VH;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+@media (max-width:767px) {
+    .container {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+.blog {
+    background-color: white;
+    padding: 25px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    box-shadow: 10px 10px 0px;
+    width: 330px;
+}
+.blog > img {
+    max-width: 100%;
+}
+.blog .info .type {
+    display: block;
+    background-color: var(--main-bg-color);
+    width: fit-content;
+    margin-top: 15px;
+    padding: 6px 12px;
+    letter-spacing: -.3px;
+    font-weight: bold;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.blog .info .dop {
+    display: block;
+    margin-top: 20px;
+}
+.blog p {
+    color: hsl(0, 0%, 50%);
+    line-height: 1.5;
+}
+.publisher {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.publisher .avatar img {
+    width: 32px;
+}
+/* End Blog */
